@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple Markers</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+{% block body %}
+    <div id="map"></div>
+    <script>
+
+        function initMap() {
+            var myLatLng = {lat: 36.899048, lng:  10.18909};
+            var sfaxLatLng = {lat: 34.739822, lng:  10.760019599999964};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 9,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'MySchool'
+            });
+
+            var markerv = new google.maps.Marker({
+                position: sfaxLatLng,
+                map: map,
+                title: 'Sfax'
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk2RbxLgad0YKftcI1nPZ5wrQc7IHcnGA
+            &callback=initMap">
+    </script>
+
+{% endblock %}
+</body>
+</html>

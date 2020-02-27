@@ -1,0 +1,33 @@
+{% extends 'default/index.html.twig' %}
+{% block  changer  %}
+<h2 style="color: #8959A8" >Liste des bus : </h2>
+
+<div class="post-container">
+
+
+    {% for m in transport %}
+
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <div class="featured-box">
+            <figure>
+                <div class="homes-tag featured"></div>
+                <div class="homes-tag rent"><i class="lni-heart"></i> </div>
+
+            </figure>
+            <div class="content-wrapper">
+                <div class="feature-content">
+                    <h4>Date d'inscription : {{ m.dateInscription | date}}</a></h4>
+                    <h4> Fin de l'inscription : {{ m.finInscription | date }}  </a> </h4>
+                    <h4> Montant : {{ m.montant}} DT </a> </h4>
+
+                    <td><a href= "{{ url('deletetransport',{'id':m.id })  }}"> Supprimer  !</a> <br></td> <br>
+                    <td><a href= "{{ url('updatetransport',{'id':m.id })  }}"> Modifier  !</a> <br></td><br>
+                    <td><a href= "{{ url('addtransport',{'id':m.id })  }}"> Ajouter  !</a> <br></td><br>
+
+                </div>
+            </div>
+            {% endfor %}
+
+
+
+{% endblock %}

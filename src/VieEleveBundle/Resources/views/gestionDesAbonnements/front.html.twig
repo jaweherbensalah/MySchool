@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+{% block  content  %}
+    <br>
+    <br>
+    <br>
+    <center>
+
+        <h1> Bienvenue à votre espace d'inscription aux services restaurant </h1>
+
+    </center>
+    <br>
+    <br>
+    <br>
+    <center>
+        {{ form_start(form) }}
+        <table id="tab">
+            <tr>
+                <td> Saisir votre username:</td> <td> {{ form_widget(form.username) }}</td>
+            </tr>
+            <tr>
+                <td> Votre email:</td> <td> {{ form_widget(form.email) }}</td>
+            </tr>
+            <tr>
+                <td> Votre mot de passe:</td> <td> {{ form_widget(form.password) }}</td>
+            </tr>
+            <tr>
+                <td> Duree de votre abonnement:</td> <td> {{ form_widget(form.duree_abonnement) }}</td>
+
+            <tr>
+                <td>  <button id="associer" class="btn btn-secondary"> s'incrire</button></td>
+
+            </tr>
+        </table>
+    </center>
+
+    {{ form_end(form) }}
+    <div style="text-align: center; color: #8959A8" id="affecter" ><H1> Vous estes inscrit au service Restaurant! </H1></div>
+
+
+
+
+    <script src="{{asset('jquery-min.js')}}"></script>
+    <script>
+        $("#affecter").hide();
+        $(document).ready(
+            $("#associer").click(
+                function () {
+                    $("#affecter").show();
+                    $("#tab").hide();
+
+                }
+            )
+        )
+
+    </script>
+{% endblock %}

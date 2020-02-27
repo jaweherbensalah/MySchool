@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e0a95eb-a9cb-4a76-ae65-f6c4a3d7ce68" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/webeweb/core-library" />
+      <path value="$PROJECT_DIR$/vendor/webeweb/highcharts-bundle" />
+      <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-json" />
+      <path value="$PROJECT_DIR$/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/vendor/ob/highcharts-bundle" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1XZaD8BBW0vajJOKnRPY7ZD01Yp" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/menu" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pi_final\web\menu" />
+      <recent name="C:\xampp\htdocs\pi_final\app\Resources\FOSUserBundle\views" />
+      <recent name="C:\xampp\htdocs\pi_final\app\Resources" />
+      <recent name="C:\xampp\htdocs\pi_final\app\Resources\views\backend\GestionVieEleve" />
+      <recent name="C:\xampp\htdocs\pi_final\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\pi_final\web\menu" />
+      <recent name="C:\xampp\htdocs\pi_final\src\VieEleveBundle\Resources\views\gestionDesAbonnements" />
+      <recent name="C:\xampp\htdocs\pi_final\src\AppBundle\Controller" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:schema:create" />
+      <command value="s doctrine:schema:update" />
+      <command value="s generate:bundle" />
+      <command value="s doctrine:generate:entity " />
+      <command value="s doctrine:generate:form" />
+      <command value="s doctrine:generate:form VieEleveBundle:menu" />
+      <command value="s doctrine:generate:form VieEleveBundle:transport" />
+      <command value="s doctrine:generate:form VieEleveBundle:paiement" />
+      <command value="s doctrine:cache:stats" />
+      <command value="c require stripe/stripe-php" />
+      <command value="s doctrine:generate:form VieEleveBundle:eleve" />
+      <command value="s doctrine:generate:entity VieEleveBundle:eleve" />
+      <command value="s doctrine:generate:form VieEleveBundle:abonneRestaurant" />
+      <command value="s doctrine:generate:entity VieEleveBundle:eleveRestau" />
+      <command value="s doctrine:generate:form VieEleveBundle:eleveRestau" />
+      <command value="s doctrine:generate:entity VieEleveBundle:quittanceRestau" />
+      <command value="s doctrine:generate:entity VieEleveBundle:abonneTransport" />
+      <command value="s doctrine:generate:form VieEleveBundle:abonneTransport" />
+      <command value="annotation" />
+      <command value="s doctrine:generate:entity VieEleveBundle:quittanceTransport" />
+      <command value="controller" />
+      <command value="s generate:controller" />
+      <command value="c update --prefer-dist" />
+      <command value="c dump-autoload" />
+      <command value="s generate:controller " />
+      <command value="c self-update" />
+      <command value="c install" />
+      <command value="c update" />
+      <command value="s generate:controller  VieEleveBundle:security" />
+      <command value="s generate:controller  AppBundle:security" />
+      <command value="s debug:router" />
+      <command value="s cache:clear" />
+      <command value="s doctrine:generate:form VieEleveBundle:quittanceTransport" />
+      <command value="s doctrine:generate:form VieEleveBundle:quittanceRestau" />
+      <command value="s doctrine:schema:update --dump-sql" />
+      <command value="s doctrine:schema:update --force" />
+      <command value="s server:run" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e0a95eb-a9cb-4a76-ae65-f6c4a3d7ce68" name="Default Changelist" comment="" />
+      <created>1581255947031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581255947031</updated>
+      <workItem from="1581255948373" duration="11166000" />
+      <workItem from="1581320334247" duration="13911000" />
+      <workItem from="1581350543243" duration="758000" />
+      <workItem from="1581360730696" duration="9911000" />
+      <workItem from="1581419468231" duration="5581000" />
+      <workItem from="1581608875636" duration="787000" />
+      <workItem from="1581609963930" duration="8867000" />
+      <workItem from="1581626008760" duration="19067000" />
+      <workItem from="1581669618742" duration="8129000" />
+      <workItem from="1581806878315" duration="626000" />
+      <workItem from="1581810813626" duration="143000" />
+      <workItem from="1581814040951" duration="10783000" />
+      <workItem from="1581986694977" duration="8964000" />
+      <workItem from="1582001623048" duration="1002000" />
+      <workItem from="1582028729051" duration="1032000" />
+      <workItem from="1582087319398" duration="11333000" />
+      <workItem from="1582137635372" duration="20836000" />
+      <workItem from="1582165786722" duration="224000" />
+      <workItem from="1582166032231" duration="174000" />
+      <workItem from="1582166225333" duration="2187000" />
+      <workItem from="1582169425099" duration="210000" />
+      <workItem from="1582190012167" duration="38000" />
+      <workItem from="1582191315726" duration="2524000" />
+      <workItem from="1582203306619" duration="7662000" />
+      <workItem from="1582238664523" duration="37847000" />
+      <workItem from="1582475501780" duration="264000" />
+      <workItem from="1582476093010" duration="7576000" />
+      <workItem from="1582490370276" duration="7821000" />
+      <workItem from="1582585888649" duration="2959000" />
+      <workItem from="1582663636076" duration="6465000" />
+      <workItem from="1582670226850" duration="1376000" />
+      <workItem from="1582671769718" duration="23000" />
+      <workItem from="1582674896996" duration="7150000" />
+      <workItem from="1582716410620" duration="64000" />
+      <workItem from="1582723212953" duration="465000" />
+      <workItem from="1582724207472" duration="28070000" />
+      <workItem from="1582802799953" duration="22105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

@@ -1,0 +1,64 @@
+{% extends 'default/index.html.twig' %}
+{% block  changer  %}
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-primary">
+                <h4 class="card-title ">Facture de l'élève numéro : {{ eleve.id }} Nommé : {{ eleve.username }}</h4>
+                {#                        <p class="card-category"> Here is a subtitle for this table</p>#}
+
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="tab" class="table" border="1">
+                        <thead class=" text-primary">
+                        <th>  Date Inscription</th>
+                        <th>  Fin Abonnement</th>
+                        <th>Montant Payé</th>
+                        <th>remplir facture</th>
+
+
+                        <tbody>
+                        {% for s in quittance %}
+
+
+                        <tr>
+                            <td> {{ s.debutInscription | date }} </td>
+                            <td>{{ s.finInscription | date }}  </td>
+                            <td> {{ s.prix }}    </td>
+
+
+                            <td>  <a href="{{ path('AffecterTransport',{'ide':eleve.id,
+                                    'id':s.id }) }}" id="affecter" >affecter</a> </td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+                    {% endfor %}
+                    <a href="{{ path('imprimerQuittanceTransport',{'id':eleve.id}) }}" >  <button id="" class="btn btn-secondary">Vouler-vous imprimer cette facture ?</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{asset('jquery-min.js')}}"></script>
+    <script>
+        $("#affecter").show();
+        $(document).ready(
+            $("#affecter").click(
+                function () {
+                    $("#tab").hide();
+
+                }
+            )
+        )
+
+    </script>
+{% endblock changer %}

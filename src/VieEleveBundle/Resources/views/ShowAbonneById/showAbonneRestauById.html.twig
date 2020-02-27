@@ -1,0 +1,85 @@
+
+{% block body %}
+
+    <!-- Page Content -->
+    <div class="container" style="background-image:url('{{asset('menu/cantine.jpg/')}} no-repeat center center;">
+
+
+        <div class="row">
+
+            <!-- Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h5 class="mt-4"> Votre Identifiant :{{ id|upper }} </h5>
+            </div>
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h5 class="mt-4"> Votres email : {{ email }}</h5>
+            </div>
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h5   < class="mt-4"> Votre nom utilisateur : {{ username }} </h5>
+            </div>
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h5 class="mt-4"> Votre solde : {{ solde }}</h5>
+            </div>
+            <div class="col-lg-8">
+
+                <h5 class="mt-4"> Votre mot de passe : {{ password }}</h5>
+            </div>
+            <div class="col-lg-8">
+
+                <!-- Title -->
+                <h5 class="mt-4"> Votre Abonnement : {{ dureeAbonnement }}</h5>
+            </div>
+
+
+
+            <p class="lead">
+
+                <a href="{{ path('register_transport') }}">Retour :</a>
+            </p>
+
+            <p class="lead" >
+                <a href="{{ path('ajoutQR') }}"
+                   id="" >Remplir votre Facture ici !</a> </p>
+
+            <p class="lead" >
+                <a href="{{ path('simulaionQuittance',{'id':p.id}) }}"
+                   id="" >Consulter votre facture </a> </p>
+
+
+
+
+
+            <!-- Comments Form -->
+
+
+            <!-- Single Comment -->
+
+            <!-- Comment with nested comments -->
+
+
+        </div>
+        <br><br><br><br><br>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+
+
+
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}

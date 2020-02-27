@@ -1,0 +1,58 @@
+
+{% block body %}
+    <!-- Page Content -->
+    <div class="container">
+
+    <div class="row">
+
+    <!-- Post Content Column -->
+    <div class="col-lg-8">
+
+        <!-- Title -->
+        <h3 class="mt-4"> Item : {{ items|upper }}</h3>
+    </div>
+        <div class="col-lg-8">
+
+            <!-- Title -->
+            <h5 class="mt-4"> Prix : {{ prix }}</h5>
+        </div>
+        <!-- Author -->
+        <p class="lead">
+
+            <a href="{{ path('readmenu') }}">retour :</a>
+        </p>
+
+
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="{{ asset('menu/images.jfif' ) }}" alt="{{ items }}">
+
+
+
+        <!-- Comments Form -->
+
+
+        <!-- Single Comment -->
+
+            <!-- Comment with nested comments -->
+
+
+        </div>
+        <br><br><br><br><br>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+            <!-- Search Widget -->
+
+
+
+
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}

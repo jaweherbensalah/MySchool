@@ -1,0 +1,44 @@
+<br>
+<b>Tunis le{{ "now"|date("m/d/Y") }}</b>
+<div><img width="200px;" src="menu/logo.png.png" alt="MyShcool"> </div>
+
+<br><br><br>
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header card-header-primary">
+            <h4 class="card-title ">Facture de l'élève numéro : {{ eleve.id }} Nommé : {{ eleve.username }}</h4>
+            {#                        <p class="card-category"> Here is a subtitle for this table</p>#}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table" border="1">
+                       <thead class=" text-primary">
+                       <tr>
+                       <th>  Date Inscription</th>
+                    <th>  Fin Abonnement</th>
+                    <th>Montant Payé</th>
+
+                    </tr>
+                        <tbody>
+                    {% for s in quittance %}
+
+
+                    <tr>
+                        <td> {{ s.debutInscription | date }} </td>
+                        <td>{{ s.finInscription | date }}  </td>
+                        <td> {{ s.prix }}    </td>
+
+
+
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

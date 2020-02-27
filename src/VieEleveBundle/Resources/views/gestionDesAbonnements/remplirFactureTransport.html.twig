@@ -1,0 +1,22 @@
+
+{% block  changer  %}
+Votre facture est remplie !!!
+
+{% for e in eleve %}
+
+
+
+
+
+               <li>
+                   <p> heyy
+                       <a href="{{ path('simulaionQuittanceTransport',{'id':e.id}) }}"
+                          id="" >affecter</a> </p>
+            </li>
+
+{% endfor %}
+    <a href="{{ path('imprimerQuittanceTransport',{'id':eleve.id}) }}" >
+        <button id="" class="btn btn-secondary">Vouler-vous imprimer cette facture ?</button></a>
+
+
+   {% endblock changer %}

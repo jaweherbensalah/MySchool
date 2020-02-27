@@ -1,0 +1,20 @@
+{% extends 'default/index.html.twig' %}
+{% block addmenu %}
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <br> <br> <br>
+        <h3 class="contact-title">Ajouter le menu du jour !</h3>
+        <div class="form-control">
+            {{ form_start(form) }}
+            {{ form_widget(form.items,{'attr':{'type':'text','class':'form-control','placeholder':'Items...'}}) }}
+            <br>
+            {{ form_widget(form.prix,{'attr':{'type':'textarea','class':'form-control','placeholder':'Prix...'}}) }}
+            <br>
+            {{ form_widget(form.photo,{'attr':{'type':'text','class':'form-control','placeholder':'photo...'}}) }}
+            {{ form_widget(form.Submit,{'attr':{'type':'text','class':'btn btn-common','placeholder':'Ajouter...'}}) }}
+            <br>
+            {{ form_end(form) }}
+        </div>
+
+    {% endif %}
+{% endblock %}

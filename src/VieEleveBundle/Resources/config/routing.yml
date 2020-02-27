@@ -1,0 +1,137 @@
+vie_eleve_homepage:
+    path:     /
+    defaults: { _controller: VieEleveBundle:Default:index }
+
+
+addmenu:
+    path:     /admin/addmenu
+    defaults: { _controller: VieEleveBundle:gestionEleve:addmenu }
+
+readmenu:
+    path:     /admin/readmenu
+    defaults: { _controller: VieEleveBundle:gestionEleve:readmenu }
+
+updatemenu:
+    path:     /admin/updatemenu/{id}
+    defaults: { _controller: VieEleveBundle:gestionEleve:updatemenu }
+
+deletemenu:
+    path:     /admin/deletemenu/{id}
+    defaults: { _controller: VieEleveBundle:gestionEleve:deletemenu }
+
+addtransport:
+    path:     /admin/addtransport
+    defaults: { _controller: VieEleveBundle:gestionEleve:addtransport }
+readtransport:
+    path:     /admin/readtransport
+    defaults: { _controller: VieEleveBundle:gestionEleve:readtransport }
+
+updatetransport:
+    path:     /admin/updatetransport/{id}
+    defaults: { _controller: VieEleveBundle:gestionEleve:updatetransport }
+
+deletetransport:
+    path:     /admin/deletetransport/{id}
+    defaults: { _controller: VieEleveBundle:gestionEleve:deletetransport }
+
+VieEleve:
+    path:     /VieEleve
+    defaults: { _controller: VieEleveBundle:gestionEleve:VieEleve }
+gestioEleve:
+    path:     /gestioEleve
+    defaults: { _controller: VieEleveBundle:gestionEleve:gestioEleve }
+
+
+
+
+ajax_search:
+    path:     /search
+    defaults: { _controller: VieEleveBundle:gestionEleve:search}
+detailed_post:
+    path:     /detailedpost/{id}
+    defaults: { _controller: VieEleveBundle:gestionEleve:showdetailed }
+
+
+
+
+
+register_restaurant:
+    path:     /registerRestaurant
+    defaults: { _controller: VieEleveBundle:gestionDesAbonnements:registerRestaurant }
+
+list_abonnes_restaurant:
+    path:     /admin/listAbonnesRestaurant
+    defaults: { _controller: VieEleveBundle:gestionDesAbonnements:listAbonnesRestaurant }
+
+imprimeAbonnesRestaurant:
+    path:     /admin/imprimeAbonnesRestaurant
+    defaults: { _controller: VieEleveBundle:gestionDesAbonnements:imprimeAbonnesRestaurant }
+imprimeAbonneTransport:
+    path:     /admin/imprimeAbonneTransport
+    defaults: { _controller: VieEleveBundle:gestionDesAbonnements:imprimeAbonneTransport }
+
+
+
+imprimerQuittanceRestau:
+    path:     /imprimerQuittanceRestau/{id}
+    defaults: { _controller: VieEleveBundle:gestionPaiement:imprimerQuittanceRestau }
+
+simulaionQuittance:
+    path:     /simulaionQuittanceRestau/{id}
+    defaults: { _controller: VieEleveBundle:gestionPaiement:simulaionQuittance }
+imprimerQuittanceTransport:
+    path:     /imprimerQuittanceTransport/{id}
+    defaults: { _controller: VieEleveBundle:gestionPaiement:imprimerQuittanceTransport }
+simulaionQuittanceTransport:
+    path:     /simulaionQuittanceTransport/{id}
+    defaults: { _controller: VieEleveBundle:gestionPaiement:simulaionQuittanceTransport }
+
+
+
+
+
+
+register_transport:
+    path:     /registerTransport
+    defaults: { _controller: VieEleveBundle:gestionDesAbonnements:registerTransport }
+
+list_abonnes_transport:
+    path:     /admin/listAbonnesTransport
+    defaults: { _controller: VieEleveBundle:gestionDesAbonnements:listAbonnesTransport }
+AffecterTransport:
+    path:     /AffecterTransport/{ide}/{id}
+    defaults: {  _controller: VieEleveBundle:gestionDesAbonnements:AffecterTransport}
+AffecterRestau:
+    path:     /AffecterRestau/{ide}/{id}
+    defaults: {  _controller: VieEleveBundle:gestionDesAbonnements:AffecterRestau}
+
+showAbonneTransportById:
+    path:     /showAbonneTransportById/{id}
+    defaults: {  _controller: VieEleveBundle:gestionDesAbonnements:showAbonneTransportById}
+showAbonneRestauById:
+    path:     /showAbonneRestauById/{id}
+    defaults: {  _controller: VieEleveBundle:gestionDesAbonnements:showAbonneRestauById}
+
+maps:
+    path:     /maps
+    defaults: {  _controller: VieEleveBundle:maps:maps}
+
+streetMap:
+    path:     /streetMap
+    defaults: {  _controller: VieEleveBundle:maps:streetMap}
+tuto:
+    path:     /tuto
+    defaults: {  _controller: VieEleveBundle:maps:mapstuto}
+
+chart:
+    path:     /chart
+    defaults: { _controller: VieEleveBundle:highchart:chart }
+
+
+
+ajoutQT:
+    path:     /ajoutQT
+    defaults: {  _controller: VieEleveBundle:gestionDesAbonnements:ajoutQT}
+ajoutQR:
+    path:     /ajoutQR
+    defaults: {  _controller: VieEleveBundle:gestionDesAbonnements:ajoutQR}

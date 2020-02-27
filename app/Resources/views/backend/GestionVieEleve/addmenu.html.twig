@@ -1,0 +1,33 @@
+
+{% block body %}
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <center><h2 class="contact-title">
+                <br><br>
+                Ajouter le menu du jour !
+            </h2></center>
+        <div class="form-group has-error">
+            {{ form_start(form) }}
+
+            {{ form_widget(form.items,{'attr':{'type':'text','class':'form-control','placeholder':'Items...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(form.prix,{'attr':{'type':'textarea','class':'form-control','placeholder':'Prix...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(form.photo,{'attr':{'type':'text','class':'form-control','placeholder':'photo...'}}) }}
+            <br> <br> <br>
+            <center> {{ form_widget(form.Submit,{'attr':{'type':'text','class':'btn btn-common','placeholder':'Submit...'}}) }}        </center>
+            <br> <br> <br>
+            {{ form_end(form) }}
+        </div>
+    {% elseif is_granted('IS_AUTHENTICATED_ANONYMOUSLY') %}
+        <br><br><br>
+
+        <div class="alert alert-warning" role="alert">
+            <h3>
+                In order to post in our blog you need to be connected, if you are not
+                you can join us by clicking <a href="{{ path('fos_user_registration_register') }}">HERE</a>
+                Or if you already have an account click <a href="{{ path('fos_user_security_login') }}" >HERE</a> to connect !
+            </h3>
+
+        </div>
+    {% endif %}
+{% endblock %}

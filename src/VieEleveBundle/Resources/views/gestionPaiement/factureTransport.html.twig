@@ -1,0 +1,24 @@
+{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+<center><h2 class="contact-title">
+        <br><br>
+        Remplir ces champs : !
+    </h2></center>
+<div class="form-group has-error">
+    {{ form_start(form) }}
+
+    Début de votre Abonnement : <br>
+    {{ form_widget(form.debutInscription,{'attr':{'type':'date','class':'form-control','placeholder':'Debut Inscription...'}}) }}
+    <br> <br>  Fin de votre Abonnement : <br>
+    {{ form_widget(form.finInscription,{'attr':{'type':'date','class':'form-control','placeholder':'Fin Inscription...'}}) }}
+    <br> <br>Votre Identifiant : <br>
+    {{ form_widget(form.eleveTransport,{'attr':{'type':'text','class':'form-control','placeholder':'eleve...'}}) }}
+    <br> <br> <br>
+     {{ form_widget(form.prix,{'attr':{'type':'text','class':'form-control','placeholder':'prix...'}}) }}
+    <br> <br> <br>
+    <center> {{ form_widget(form.valider,{'attr':{'type':'text','class':'btn btn-common','placeholder':'Submit...'}}) }}        </center>
+    <br> <br> <br>
+    {{ form_end(form) }}
+</div>
+{% elseif is_granted('IS_AUTHENTICATED_ANONYMOUSLY') %}
+
+{% endif %}

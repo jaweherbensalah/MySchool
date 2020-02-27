@@ -1,0 +1,38 @@
+{% extends 'default/index.html.twig' %}
+{% block  changer  %}
+{% block body %}
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <center><h2 class="contact-title">
+                <br><br>
+                Ajouter un moyen de transport !
+            </h2></center>
+        <div class="form-group has-error">
+            {{ form_start(form) }}
+
+            {{ form_widget(form.dateInscription,{'attr':{'type':'date','class':'form-control','placeholder':'Debut Inscription...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(form.finInscription,{'attr':{'type':'date','class':'form-control','placeholder':'Fin Inscription...'}}) }}
+            <br> <br> <br>
+            {{ form_widget(form.montant,{'attr':{'type':'text','class':'form-control','placeholder':'Montant...'}}) }}
+            <br> <br> <br>
+           {# {{ form_widget(form.eleve_transport,{'attr':{'type':'integer','class':'form-control','placeholder':'Montant...'}}) }}
+            <br> <br> <br>#}
+            <center> {{ form_widget(form.Submit,{'attr':{'type':'text','class':'btn btn-common','placeholder':'Submit...'}}) }}        </center>
+            <br> <br> <br>
+            {{ form_end(form) }}
+        </div>
+    {% elseif is_granted('IS_AUTHENTICATED_ANONYMOUSLY') %}
+        <br><br><br>
+
+        <div class="alert alert-warning" role="alert">
+            <h3>
+                In order to post in our blog you need to be connected, if you are not
+                you can join us by clicking <a href="{{ path('fos_user_registration_register') }}">HERE</a>
+                Or if you already have an account click <a href="{{ path('fos_user_security_login') }}" >HERE</a> to connect !
+            </h3>
+
+        </div>
+    {% endif %}
+{% endblock %}
+{% endblock %}
